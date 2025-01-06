@@ -79,13 +79,17 @@ body::before {
   z-index: 10;
   padding: 1.5rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(11, 11, 15, 0.8);
+  backdrop-filter: blur(10px);
 }
 
 .navbar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .logo {
@@ -101,7 +105,7 @@ body::before {
 
 .nav-buttons {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-left: auto;
 }
 
@@ -537,6 +541,110 @@ body::before {
   .os-card {
     margin: 0 auto;
     max-width: 300px;
+  }
+
+  .navbar {
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .navbar-content {
+    padding: 0 1rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  main {
+    margin-top: 5rem;
+  }
+
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .features {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature-title {
+    font-size: 1.1rem;
+  }
+
+  .feature-description {
+    font-size: 0.9rem;
+  }
+
+  .compatibility {
+    padding: 3rem 0;
+  }
+
+  .os-card {
+    padding: 1rem;
+  }
+
+  .chart-container {
+    height: 250px;
+    margin: 1rem -1rem;
+    border-radius: 0;
   }
 }
 
