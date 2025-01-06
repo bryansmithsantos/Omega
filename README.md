@@ -19,11 +19,13 @@ uma estrutura de *AI* avançada, com intuito de testes e estudos em diversos amb
 git clone https://github.com/seu-usuario/omega.git
 cd omega
 ```
+--
 
 2. Instale as dependências Python:
 ```bash
 pip install -r requirements.txt
 ```
+--
 
 3. Instale as dependências Node.js:
 ```bash
