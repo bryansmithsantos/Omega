@@ -1,65 +1,47 @@
-# Projeto Omega
+# Omega - IA Assistant
 
 Um assistente de IA baseado em GPT4All com interface desktop usando Tauri e Python.
 **Language:** [Português](#portuguese)
 
 uma estrutura de *AI* avançada, com intuito de testes e estudos em diversos ambientes. buscando a otimização e aprendizado apartir de um único modelo de teste.
 
----
+Este projeto utiliza as seguintes tecnologias:
 
-### Requisitos
+- React 19
+- TypeScript
+- Tauri
+- Vite
+- TailwindCSS
+- Axios
 
-* Python 3.8+
-* Node.js 14+
-* npm ou yarn
+## 📋 Pré-requisitos
 
----
+- Node.js
+- Vite
+- Python
+## 🔧 Instalação
 
-### Instalação
-
-1. Clone o repositório:
 ```bash
-git clone https://github.com/bryansmithsantos/omega.git
-cd omega
-```
-
-
-2. Instale as dependências Python:
-```bash
-pip install -r requirements.txt
-```
-
-
-3. Instale as dependências Node.js:
-```bash
+# Instalar dependências
 npm install
-```
----
 
-### Executando o projeto
+# Iniciar em modo desenvolvimento
+npm run dev
 
-1. Inicie o backend:
-```bash
-python src/backend/api/app.py
+# Construir para produção
+npm run build
 ```
 
-2. Em outro terminal, inicie o frontend:
-```bash
-npm start
-```
+## 📦 Scripts Disponíveis
+
+- `npm start` - Inicia o Vite
+- `npm run build` - Constrói o projeto
+- `npm run tauri` - Comandos Tauri
+- `npm run dev` - Inicia o modo desenvolvimento com Tauri
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
 ---
-
-### Estrutura do Projeto
-
-O projeto está organizado em:
-* - `frontend/`: Interface do usuário com Electron
-* - `backend/`: Servidor Python com o modelo GPT4All
-* - `models/`: Modelos treinados
-* - `data/`: Dados de treinamento
-* - `tests/`: Testes unitários e de integração
----
-
-##  Licença
-
-Este projeto está licenciado sob a **MIT License**. Veja o arquivo LICENSE para mais detalhes.
----
+Desenvolvido com ❤️
