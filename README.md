@@ -1,5 +1,7 @@
 # Projeto Omega
 
+**Language:** [Português](#portuguese)
+
 uma estrutura de *AI* avançada, com intuito de testes e estudos em diversos ambientes. buscando a otimização e aprendizado apartir de um único modelo de teste.
 
 ---
