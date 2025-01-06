@@ -5,9 +5,11 @@ Um assistente de IA baseado em GPT4All com interface desktop usando Electron e P
 
 ## Requisitos
 
-- Python 3.8+
-- Node.js 14+
-- npm ou yarn
+* Python 3.8+
+* Node.js 14+
+* npm ou yarn
+
+---
 
 ## Instalação
 
