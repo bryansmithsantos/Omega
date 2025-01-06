@@ -56,6 +56,7 @@ O projeto está organizado em:
 * - `tests/`: Testes unitários e de integração
 ---
 
-### Licença
+##  Licença
 
-MIT 
+Este projeto está licenciado sob a **MIT License**. Veja o arquivo LICENSE para mais detalhes.
+---
