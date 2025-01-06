@@ -1,6 +1,7 @@
 # Projeto Omega
 
-Um assistente de IA baseado em GPT4All com interface desktop usando Electron e Python.
+```Um assistente de IA baseado em GPT4All com interface desktop usando Electron e Python.```
+
 ---
 
 ## Requisitos
