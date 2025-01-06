@@ -1,6 +1,6 @@
 # Projeto Omega
 
-Um assistente de IA baseado em GPT4All com interface desktop usando Electron e Python.
+Um assistente de IA baseado em GPT4All com interface desktop usando Tauri e Python.
 
 ## Requisitos
 
@@ -12,7 +12,7 @@ Um assistente de IA baseado em GPT4All com interface desktop usando Electron e P
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/omega.git
+git clone https://github.com/bryansmithsantos/omega.git
 cd omega
 ```
 

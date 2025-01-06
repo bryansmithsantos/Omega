@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: './src/frontend/src/renderer.tsx',
-  target: 'electron-renderer',
+  target: 'node-webkit',
   devtool: 'source-map',
   module: {
     rules: [
@@ -15,7 +15,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader', 'postcss-loader'],
-      },
+      }
     ],
   },
   resolve: {
