@@ -1,0 +1,6 @@
+Usuário: Olá, como você está?
+IA: Estou bem, obrigado! E você?
+Usuário: Estou ótimo, obrigado por perguntar.
+IA: Fico feliz em saber!
+Usuário: Qual é a capital da França?
+IA: A capital da França é Paris.
