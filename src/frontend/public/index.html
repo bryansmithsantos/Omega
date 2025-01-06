@@ -4,10 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omega - Assistente IA</title>
-    <link href="./styles/main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body class="bg-gray-100">
-    <div id="root"></div>
+<body class="bg-gradient-to-br from-gray-100 to-blue-200 h-screen flex justify-center items-center">
+    <div id="root" class="w-full max-w-4xl h-full bg-white shadow-xl rounded-lg overflow-hidden">
+        <header class="bg-blue-600 text-white text-center py-4">
+            <h1 class="text-2xl font-bold">Omega - Assistente IA</h1>
+        </header>
+        <main class="flex flex-col h-full">
+            <!-- Área de mensagens -->
+            <div id="messages" class="flex-grow overflow-y-auto p-4 space-y-4 bg-gray-50">
+                <!-- Exemplo de mensagem -->
+                <div class="message user text-right">
+                    <div class="inline-block bg-blue-500 text-white rounded-lg px-4 py-2 shadow">
+                        Olá, Omega!
+                    </div>
+                </div>
+                <div class="message bot text-left">
+                    <div class="inline-block bg-gray-200 text-gray-800 rounded-lg px-4 py-2 shadow">
+                        Olá! Como posso ajudar você hoje?
+                    </div>
+                </div>
+            </div>
+            <!-- Campo de entrada -->
+            <div class="p-4 bg-gray-100 border-t flex items-center">
+                <input id="inputField" 
+                       type="text" 
+                       placeholder="Digite sua mensagem..." 
+                       class="flex-grow px-4 py-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button id="sendButton" 
+                        class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    Enviar
+                </button>
+            </div>
+        </main>
+    </div>
     <script src="../dist/renderer.js"></script>
+    <script>
+        // Lógica básica de chat
+        const inputField = document.getElementById('inputField');
+        const sendButton = document.getElementById('sendButton');
+        const messages = document.getElementById('messages');
+
+        sendButton.addEventListener('click', sendMessage);
+        inputField.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        function sendMessage() {
+            const userMessage = inputField.value.trim();
+            if (!userMessage) return;
+
+            // Adiciona a mensagem do usuário
+            appendMessage(userMessage, 'user');
+            inputField.value = '';
+
+            // Simula a resposta do assistente
+            setTimeout(() => {
+                appendMessage('Essa é uma resposta automática do Omega!', 'bot');
+            }, 1000);
+        }
+
+        function appendMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender, sender === 'user' ? 'text-right' : 'text-left');
+
+            const messageBubble = document.createElement('div');
+            messageBubble.classList.add('inline-block', 'px-4', 'py-2', 'rounded-lg', 'shadow');
+            messageBubble.textContent = text;
+
+            if (sender === 'user') {
+                messageBubble.classList.add('bg-blue-500', 'text-white');
+            } else {
+                messageBubble.classList.add('bg-gray-200', 'text-gray-800');
+            }
+
+            messageDiv.appendChild(messageBubble);
+            messages.appendChild(messageDiv);
+            messages.scrollTop = messages.scrollHeight;
+        }
+    </script>
 </body>
-</html> 
+</html>
