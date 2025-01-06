@@ -1,14 +1,21 @@
 # Projeto Omega
 
 Um assistente de IA baseado em GPT4All com interface desktop usando Tauri e Python.
+**Language:** [Português](#portuguese)
 
-## Requisitos
+uma estrutura de *AI* avançada, com intuito de testes e estudos em diversos ambientes. buscando a otimização e aprendizado apartir de um único modelo de teste.
 
-- Python 3.8+
-- Node.js 14+
-- npm ou yarn
+---
 
-## Instalação
+### Requisitos
+
+* Python 3.8+
+* Node.js 14+
+* npm ou yarn
+
+---
+
+### Instalação
 
 1. Clone o repositório:
 ```bash
@@ -16,17 +23,20 @@ git clone https://github.com/bryansmithsantos/omega.git
 cd omega
 ```
 
+
 2. Instale as dependências Python:
 ```bash
 pip install -r requirements.txt
 ```
 
+
 3. Instale as dependências Node.js:
 ```bash
 npm install
 ```
+---
 
-## Executando o projeto
+### Executando o projeto
 
 1. Inicie o backend:
 ```bash
@@ -37,16 +47,19 @@ python src/backend/api/app.py
 ```bash
 npm start
 ```
+---
 
-## Estrutura do Projeto
+### Estrutura do Projeto
 
 O projeto está organizado em:
-- `frontend/`: Interface do usuário com Electron
-- `backend/`: Servidor Python com o modelo GPT4All
-- `models/`: Modelos treinados
-- `data/`: Dados de treinamento
-- `tests/`: Testes unitários e de integração
+* - `frontend/`: Interface do usuário com Electron
+* - `backend/`: Servidor Python com o modelo GPT4All
+* - `models/`: Modelos treinados
+* - `data/`: Dados de treinamento
+* - `tests/`: Testes unitários e de integração
+---
 
-## Licença
+##  Licença
 
-MIT 
+Este projeto está licenciado sob a **MIT License**. Veja o arquivo LICENSE para mais detalhes.
+---
