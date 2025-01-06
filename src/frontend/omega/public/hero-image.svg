@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glow" x1="400" y1="0" x2="400" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#D946EF;stop-opacity:0.2"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20"/>
+    </filter>
+    <linearGradient id="accent" x1="0" y1="0" x2="800" y2="600">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#D946EF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Elements -->
+  <circle cx="400" cy="300" r="200" fill="url(#glow)" filter="url(#blur)" opacity="0.5"/>
+  <circle cx="400" cy="300" r="150" stroke="url(#accent)" stroke-width="2" opacity="0.3"/>
+  <circle cx="400" cy="300" r="100" stroke="url(#accent)" stroke-width="2" opacity="0.4"/>
+
+  <!-- Grid Lines -->
+  <g opacity="0.2">
+    <path d="M200 300L600 300" stroke="url(#accent)" stroke-width="1"/>
+    <path d="M400 100L400 500" stroke="url(#accent)" stroke-width="1"/>
+    <path d="M250 150L550 450" stroke="url(#accent)" stroke-width="1"/>
+    <path d="M550 150L250 450" stroke="url(#accent)" stroke-width="1"/>
+  </g>
+
+  <!-- Accent Points -->
+  <g>
+    <circle cx="400" cy="300" r="8" fill="url(#accent)"/>
+    <circle cx="200" cy="300" r="6" fill="url(#accent)" opacity="0.8"/>
+    <circle cx="600" cy="300" r="6" fill="url(#accent)" opacity="0.8"/>
+    <circle cx="400" cy="100" r="6" fill="url(#accent)" opacity="0.8"/>
+    <circle cx="400" cy="500" r="6" fill="url(#accent)" opacity="0.8"/>
+  </g>
+
+  <!-- Animated Elements -->
+  <g opacity="0.6">
+    <circle cx="400" cy="300" r="50" stroke="url(#accent)" stroke-width="4" stroke-dasharray="20 10">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 400 300"
+        to="360 400 300"
+        dur="10s"
+        repeatCount="indefinite"
+      />
+    </circle>
+  </g>
+
+  <!-- Floating Particles -->
+  <g opacity="0.4">
+    <circle cx="350" cy="250" r="4" fill="url(#accent)">
+      <animate
+        attributeName="cy"
+        values="250;230;250"
+        dur="3s"
+        repeatCount="indefinite"
+      />
+    </circle>
+    <circle cx="450" cy="350" r="4" fill="url(#accent)">
+      <animate
+        attributeName="cy"
+        values="350;370;350"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+    </circle>
+    <circle cx="400" cy="200" r="4" fill="url(#accent)">
+      <animate
+        attributeName="cy"
+        values="200;180;200"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+    </circle>
+  </g>
+</svg> 

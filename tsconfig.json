@@ -7,10 +7,14 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "rootDir": "./src/frontend/src",
+    "rootDir": "./src/frontend/omega", 
     "jsx": "react"
   },
   "include": [
-    "src/frontend/src/**/*"
+    "src/frontend/omega/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
-} 
+}
