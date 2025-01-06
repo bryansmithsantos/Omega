@@ -1,6 +1,6 @@
 # Projeto Omega
 
-Um assistente de IA baseado em GPT4All com interface desktop usando Electron e Python.
+uma estrutura de *AI* avançada, com intuito de testes e estudos em diversos ambientes. buscando a otimização e aprendizado apartir de um único modelo de teste.
 
 ---
 
