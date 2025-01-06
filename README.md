@@ -4,7 +4,7 @@ Um assistente de IA baseado em GPT4All com interface desktop usando Electron e P
 
 ---
 
-## Requisitos
+### Requisitos
 
 * Python 3.8+
 * Node.js 14+
@@ -12,7 +12,7 @@ Um assistente de IA baseado em GPT4All com interface desktop usando Electron e P
 
 ---
 
-## Instalação
+### Instalação
 
 1. Clone o repositório:
 ```bash
@@ -31,7 +31,7 @@ npm install
 ```
 ---
 
-## Executando o projeto
+### Executando o projeto
 
 1. Inicie o backend:
 ```bash
@@ -44,7 +44,7 @@ npm start
 ```
 ---
 
-## Estrutura do Projeto
+### Estrutura do Projeto
 
 O projeto está organizado em:
 * - `frontend/`: Interface do usuário com Electron
@@ -54,6 +54,6 @@ O projeto está organizado em:
 * - `tests/`: Testes unitários e de integração
 ---
 
-## Licença
+### Licença
 
 MIT 
